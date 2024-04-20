@@ -1,104 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>events</title>
-  </head>
-  <body>
-    <!-- navbar start from here -->
-    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">ABESIT Student clubs</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="home.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="club.html">Clubs</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link active dropdown-toggle"
-                aria-current="page"
-                href="event.html"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Events
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Hackathons</a></li>
-                <li><a class="dropdown-item" href="#">Annual Fest</a></li>
-                <li><a class="dropdown-item" href="#">Sports day</a></li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li><a class="dropdown-item" href="#">Other Events</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="gallery.html">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contactus.html">Contact Us</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
-        </div>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <title>events</title>
+</head>
+
+<body>
+  <!-- navbar start from here -->
+  <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">ABESIT Student clubs</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="club.html">Clubs</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" aria-current="page" href="event.html" id="navbarDropdown"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Events
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#hackathon">Hackathons</a></li>
+              <li><a class="dropdown-item" href="#fest">Annual Fest</a></li>
+              <li><a class="dropdown-item" href="#sports">Sports day</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#others">Other Events</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">
+            Search
+          </button>
+        </form>
       </div>
-    </nav>
-    <!-- navbar ends here -->
-
-    <!-- card starts from here -->
-    <div class="card mb-3" style="max-width: 540px;">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="images/hackathon.jpg" class="img-fluid rounded-start" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <h6>Example heading <span class="badge bg-secondary">New</span></h6>
+    </div>
+  </nav>
+  <!-- navbar ends here -->
+  <p class="text-center h2 m-4">EVENTS</p>
+  <!-- card starts from here -->
+  <div class="border border-dark border-2 rounded m-3">
+    <p class="text-center h3">Hackathons</p>
+    <section id="hackathon" class="d-flex justify-content-around py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3 mt-3">
+            <div class="card mb-3" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="images/hack5.jpg" class="img-fluid rounded-start d-flex justify-content-around py-4"
+                    alt="..." />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Hacknovate 5.0</h5>
+                    <p class="card-text">
+                      Innovation is seeing what everybody has seen and thinking what nobody has thought
+                    </p>
+                    <button type="button" class="btn btn-outline-info">More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 mt-3">
+            <div class="card mb-3" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="images/hack3.jpg" class="img-fluid rounded-start d-flex justify-content-around py-4"
+                    alt="..." />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Hacknovate 3.0</h5>
+                    <p class="card-text">
+                      The best way to predict the future is to invent it
+                    </p>
+                    <button type="button" class="btn btn-outline-info">More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </section>
+    <div class="d-grid gap-2 col-6 m-auto mb-4">
+      <button class="btn btn-primary" type="button">More</button>
     </div>
-    <!-- cards ends here -->
-  </body>
+  </div>
+  <div class="border border-dark border-2 rounded m-3">
+    <p class="text-center h3">Annual Fest</p>
+    <section id="fest" class="d-flex justify-content-around py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3 mt-3">
+            <div class="card mb-3" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="images/fest 12.jpg" class="img-fluid rounded-start d-flex justify-content-around py-4"
+                    alt="..." />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Festin-O-Beats 12.0</h5>
+                    <p class="card-text">
+                      A college fest is not just an event; it's a carnival of creativity, a symphony of talents, and a
+                      mosaic of memories
+                    </p>
+                    <button type="button" class="btn btn-outline-info">More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 mt-3">
+            <div class="card mb-3" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="images/fest 11.jpg" class="img-fluid rounded-start d-flex justify-content-around py-4"
+                    alt="..." />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Festin-O-Beats 11.0</h5>
+                    <p class="card-text">
+                      Amidst the hustle of academics, a college fest is the perfect pit stop to refuel on inspiration
+                      and recharge your spirit.
+                    </p>
+                    <button type="button" class="btn btn-outline-info">More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 mt-3">
+            <div class="card mb-3" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="images/fest 10.jpg" class="img-fluid rounded-start d-flex justify-content-around py-4"
+                    alt="..." />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Festin-O-Beats 10.0</h5>
+                    <p class="card-text">
+                      Step into the world of college fests, where every corner holds a surprise, every event a thrill,
+                      and every participant a story waiting to unfold
+                    </p>
+                    <button type="button" class="btn btn-outline-info">More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="d-grid gap-2 col-6 m-auto mb-4">
+      <button class="btn btn-primary" type="button">More</button>
+    </div>
+  </div>
+  <div class="border border-dark border-2 rounded m-3">
+    <p class="text-center h3">Sports</p>
+    <section id="sports" class="d-flex justify-content-around py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3 mt-3">
+            <div class="card mb-3" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="images/Sports 23.jpg" class="img-fluid rounded-start d-flex justify-content-around py-4"
+                    alt="..." />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">sports fest 2023</h5>
+                    <p class="card-text">
+                      College sports festivals: where dreams take the field, passion fills the stands, and memories are
+                      etched into the hearts of players and fans alike
+                    </p>
+                    <button type="button" class="btn btn-outline-info">More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 mt-3">
+            <div class="card mb-3" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="images/sports 22.jpg" class="img-fluid rounded-start d-flex justify-content-around py-4"
+                    alt="..." />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">sports fest 2020</h5>
+                    <p class="card-text">
+                      The energy of a college sports festival is electrifying, fueled by the dedication of athletes, the
+                      enthusiasm of supporters, and the legacy of traditions
+                    </p>
+                    <button type="button" class="btn btn-outline-info">More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="d-grid gap-2 col-6 m-auto mb-4">
+      <button class="btn btn-primary" type="button">More</button>
+    </div>
+  </div>
+  <div class="border border-dark border-2 rounded m-3">
+    <p class="text-center h3">Others</p>
+    <section id="others" class="d-flex justify-content-around py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3 mt-3">
+            <div class="card mb-3" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="images/IDEA2.jpg" class="img-fluid rounded-start d-flex justify-content-around py-4"
+                    alt="..." />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Ideathon 2.0</h5>
+                    <p class="card-text">
+                      The future belongs to those who believe in the beauty of their dreams.
+                    </p>
+                    <button type="button" class="btn btn-outline-info">More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <div class="d-grid gap-2 col-6 m-auto mb-4">
+      <button class="btn btn-primary" type="button">More</button>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <!-- cards ends here -->
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
